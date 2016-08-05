@@ -1,0 +1,175 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	background-color: #e0e0e0;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.education
+{
+	padding-right: 56px;
+}
+.container
+{
+	width: 1030px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	background-color: #fff;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.2);
+	overflow: auto;
+}
+.row
+{
+	 overflow: auto;
+	 color: #fff;
+	 background-color: #333;
+	 padding: 30px 45px;
+}
+
+.rowt
+{
+	overflow: auto;
+	padding: 30px 45px;
+}
+.title
+{
+	float: right;
+	text-align: right;
+
+}
+
+h1
+{
+	font-size: 72px;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+
+h2
+{
+	font-size: 20.8px;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+ul{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.contact
+{
+	float: left;
+	display: block;
+	margin: 0;
+	list-style-type: none;
+}
+
+.contact a
+{
+	color: #fff;
+	text-decoration: none;
+	vertical-align: middle;
+	line-height:1.4;
+	font-size: 18px;
+}
+.contact a:hover
+{
+	color: #99FFFF;
+}
+.contact li
+{
+	font-size: 18px;
+	line-height: 1.4;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1457748145_355127.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1457748145_355127.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1457748145_355127.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1457748145_355127.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1457748145_355127.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+              
+                    
+          
+  
+ .time-line ul
+ {
+ 	padding-left: 10px;
+ }               
+
+
+.iconfont
+{
+	font-family:"iconfont";
+	font-size:25px;
+	font-style:normal;
+	margin-right: 5px;
+}
+
+.icon1
+{
+	font-size: 42px;
+}
+
+.stitle
+{
+	margin: 0 0 0 0px;
+	color: #fff;
+	background-color: #333;
+	padding: 3px 10px 3px 26px;
+	border-radius: 6px;
+	width: 390px;
+}
+
+.stitle p
+{
+	margin: 0 0 0 0;
+	font-size: 18px;
+}
+
+.time-line
+{
+	padding-top: 10px;
+	padding-left: 26px;
+	border-left: 4px solid #333;
+	margin: 0 0 0 22px;
+}
+
+h3 span
+{
+	font-size: 23px;
+}
+
+.time-line li
+{
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+
+div.box
+{
+	width: 50%;
+	box-sizing:border-box;
+	float: left;
+}
+
+strong{
+	color: teal;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+@media	print {
+	body{
+		background-color: #fff;
+	}
+
+	.container{
+		box-shadow: none;
+	}
+
+
+}
