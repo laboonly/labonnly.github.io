@@ -171,5 +171,13 @@ strong{
 		box-shadow: none;
 	}
 
-
+	.stitle
+	{
+		margin: 0 0 0 0px;
+		color: #fff;
+		background-color: #333;
+		padding: 3px 10px 3px 26px;
+		border-radius: 6px;
+		width: 390px;
+	}
 }
