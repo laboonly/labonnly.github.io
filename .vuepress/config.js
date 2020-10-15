@@ -1,7 +1,7 @@
 module.exports = {
-  title: "vuepress-theme-reco",
-  description: 'A simple and beautiful vuepress blog theme .',
-  // dest: 'public',
+  title: "LY Blogs",
+  description: '记录自己的所看所想',
+  dest: 'public',
   "base": "/laboonly.github.io/",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -21,7 +21,7 @@ module.exports = {
       { text: 'Contact', 
         icon: 'reco-message',
         items: [
-          { text: 'GitHub', link: 'https://github.com/recoluan', icon: 'reco-github' }
+          { text: 'GitHub', link: 'https://github.com/laboonly', icon: 'reco-github' }
         ]
       }
     ],
@@ -47,10 +47,10 @@ module.exports = {
     },
     friendLink: [
       {
-        title: '午后南杂',
-        desc: 'Enjoy when you can, and endure when you must.',
+        title: 'LY',
+        desc: '记录一些学习的东西',
         email: '1156743527@qq.com',
-        link: 'https://www.recoluan.com'
+        link: ''
       },
       {
         title: 'vuepress-theme-reco',
@@ -68,9 +68,9 @@ module.exports = {
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: 'reco_luan',
+    author: 'Liuyi',
     // 作者头像
-    authorAvatar: '/avatar.png',
+    authorAvatar: '/WechatIMG50.jpeg',
     // 备案号
     record: 'xxxx',
     // 项目开始时间
