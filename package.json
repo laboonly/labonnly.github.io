@@ -12,5 +12,10 @@
   },
   "dependencies": {
     "vue-class-component": "^7.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "deploy.sh"
+    }
   }
 }
