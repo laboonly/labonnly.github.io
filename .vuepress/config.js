@@ -2,7 +2,7 @@ module.exports = {
   title: "LY Blogs",
   description: '记录自己的所看所想',
   dest: 'public',
-  "base": "/laboonly.github.io/",
+  // "base": "/laboonly.github.io/",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
