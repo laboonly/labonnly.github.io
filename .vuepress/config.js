@@ -10,39 +10,33 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', icon: 'reco-home' },
-      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      { text: 'Docs', 
+      { text: '主页', link: '/', icon: 'reco-home' },
+      { text: '时间线', link: '/timeline/', icon: 'reco-date' },
+      { text: '文档', 
         icon: 'reco-message',
         items: [
           { text: 'vuepress-reco', link: '/docs/theme-reco/' }
         ]
       },
-      { text: 'Contact', 
+      { text: '联系我', 
         icon: 'reco-message',
         items: [
-          { text: 'GitHub', link: 'https://github.com/laboonly', icon: 'reco-github' }
+          { text: 'GitHub', link: 'https://github.com/laboonly', icon: 'reco-github' },
+          // { text: 'Email', link: '326534215@qq.com', icon: 'reco-email' }
         ]
       }
     ],
-    sidebar: {
-      '/docs/theme-reco/': [
-        '',
-        'theme',
-        'plugin',
-        'api'
-      ]
-    },  
+    sidebar: 'auto',  
     type: 'blog',
     // 博客设置
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认 “分类”
+        text: '文章分类' // 默认 “分类”
       },
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag' // 默认 “标签”
+        text: '标签' // 默认 “标签”
       }
     },
     friendLink: [
@@ -59,7 +53,7 @@ module.exports = {
         link: 'https://vuepress-theme-reco.recoluan.com'
       },
     ],
-    logo: '/logo.png',
+    logo: '/avatar.jpeg',
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
@@ -70,7 +64,7 @@ module.exports = {
     // 作者
     author: 'Liuyi',
     // 作者头像
-    authorAvatar: '/WechatIMG50.jpeg',
+    authorAvatar: '/avatar.jpeg',
     // 备案号
     record: 'xxxx',
     // 项目开始时间
