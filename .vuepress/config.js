@@ -15,7 +15,8 @@ module.exports = {
       { text: '文档', 
         icon: 'reco-message',
         items: [
-          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
+          { text: 'vuepress-reco', link: '/docs/theme-reco/' },
+          { text: 'JS Array', link: '/docs/JS/Array.md' }
         ]
       },
       { text: '联系我', 
@@ -58,7 +59,7 @@ module.exports = {
     search: true,
     searchMaxSuggestions: 10,
     // 自动形成侧边导航
-    // sidebar: 'auto',
+    sidebar: 'auto',
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
