@@ -12,7 +12,7 @@
     "vuepress-theme-reco": "1.5.7"
   },
   "dependencies": {
-    "ansi-regex": "^5.0.0",
+    "ansi-regex": "^5.0.1",
     "vue-class-component": "^7.2.3"
   },
   "husky": {
