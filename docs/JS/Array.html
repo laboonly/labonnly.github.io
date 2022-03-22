@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS数组常用的方法 | LY Blogs</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="记录自己的所看所想">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.1157b0c6.css" as="style"><link rel="preload" href="/assets/js/app.612206cd.js" as="script"><link rel="preload" href="/assets/js/3.24baaf55.js" as="script"><link rel="preload" href="/assets/js/1.e39e485a.js" as="script"><link rel="preload" href="/assets/js/27.f33edc21.js" as="script"><link rel="prefetch" href="/assets/js/10.a24c6d4d.js"><link rel="prefetch" href="/assets/js/11.b8947e61.js"><link rel="prefetch" href="/assets/js/12.a68173db.js"><link rel="prefetch" href="/assets/js/13.4eff82d0.js"><link rel="prefetch" href="/assets/js/14.f1563b08.js"><link rel="prefetch" href="/assets/js/15.dd2301ff.js"><link rel="prefetch" href="/assets/js/16.0d0f68fb.js"><link rel="prefetch" href="/assets/js/17.82d7b614.js"><link rel="prefetch" href="/assets/js/18.baac1e4d.js"><link rel="prefetch" href="/assets/js/19.3086a7f7.js"><link rel="prefetch" href="/assets/js/20.bf09369d.js"><link rel="prefetch" href="/assets/js/21.935e272e.js"><link rel="prefetch" href="/assets/js/22.a3848882.js"><link rel="prefetch" href="/assets/js/23.c1ba437a.js"><link rel="prefetch" href="/assets/js/24.0e5a1b42.js"><link rel="prefetch" href="/assets/js/25.f51b51e4.js"><link rel="prefetch" href="/assets/js/26.aa5d087d.js"><link rel="prefetch" href="/assets/js/28.b9d8f9ff.js"><link rel="prefetch" href="/assets/js/29.597e8770.js"><link rel="prefetch" href="/assets/js/30.d998b02a.js"><link rel="prefetch" href="/assets/js/31.596b0573.js"><link rel="prefetch" href="/assets/js/4.859270f0.js"><link rel="prefetch" href="/assets/js/5.ee276b31.js"><link rel="prefetch" href="/assets/js/6.aad2e814.js"><link rel="prefetch" href="/assets/js/7.5030f148.js"><link rel="prefetch" href="/assets/js/8.2b8a980e.js"><link rel="prefetch" href="/assets/js/9.71bbdb62.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1157b0c6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>LY Blogs</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Liuyi</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/avatar.jpeg" alt="LY Blogs" class="logo"> <span class="site-name">LY Blogs</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      文章分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/数据结构/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/http/" class="nav-link"><i class="iconfont undefined"></i>
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/categories/综合/" class="nav-link"><i class="iconfont undefined"></i>
+  综合
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试/" class="nav-link"><i class="iconfont undefined"></i>
+  面试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/组件库/" class="nav-link"><i class="iconfont undefined"></i>
+  组件库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端架构/" class="nav-link"><i class="iconfont undefined"></i>
+  前端架构
+</a></li><li class="dropdown-item"><!----> <a href="/categories/代码实践/" class="nav-link"><i class="iconfont undefined"></i>
+  代码实践
+</a></li><li class="dropdown-item"><!----> <a href="/categories/日志/" class="nav-link"><i class="iconfont undefined"></i>
+  日志
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li><li class="dropdown-item"><!----> <a href="/docs/JS/Array.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  JS Array
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/laboonly" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/avatar.jpeg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    Liuyi
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>15</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>16</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      文章分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/数据结构/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/http/" class="nav-link"><i class="iconfont undefined"></i>
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/categories/综合/" class="nav-link"><i class="iconfont undefined"></i>
+  综合
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试/" class="nav-link"><i class="iconfont undefined"></i>
+  面试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/组件库/" class="nav-link"><i class="iconfont undefined"></i>
+  组件库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端架构/" class="nav-link"><i class="iconfont undefined"></i>
+  前端架构
+</a></li><li class="dropdown-item"><!----> <a href="/categories/代码实践/" class="nav-link"><i class="iconfont undefined"></i>
+  代码实践
+</a></li><li class="dropdown-item"><!----> <a href="/categories/日志/" class="nav-link"><i class="iconfont undefined"></i>
+  日志
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress-reco
+</a></li><li class="dropdown-item"><!----> <a href="/docs/JS/Array.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  JS Array
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/laboonly" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>JS数组常用的方法</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Liuyi</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2022
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">JS数组常用的方法</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>Liuyi</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2020-05-29</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="js数组常用的方法"><a href="#js数组常用的方法" class="header-anchor">#</a> JS数组常用的方法</h1> <h2 id="不会改变原数组的"><a href="#不会改变原数组的" class="header-anchor">#</a> 不会改变原数组的：</h2> <ol><li><strong>map</strong>:
+创建一个新数组，其结果是该数组中的每个元素都调用一次提供的函数后的返回值。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	var new_array = arr.map(function callback(currentValue[, index[, array]]) 		{
+ 			// Return element for new_array 
+		}[, thisArg])
+	arr.map(x =&gt; x +1); 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="2"><li><p><strong>toString()</strong> 将数组元素转换成一个由“，”隔开的字符串</p></li> <li><p><strong>filter</strong>: 返回符合要求的元素
+var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])</p></li> <li><p><strong>some</strong>: 有一项返回true，则整体为true
+<em>arr</em>.some(<em>callback(element[, index[, array]])[, thisArg]</em>)</p></li> <li><p><strong>every</strong>: 有一项返回false，则整体为false
+arr.every(callback[, thisArg])</p></li> <li><p><strong>join</strong>: 方法将一个数组（或一个 <a href="https://developer.mozilla.org/zh-CN//docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects" target="_blank" rel="noopener noreferrer">类数组对象<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ）的所有元素连接成一个字符串并返回这个字符串。如果数组只有一个项目，那么将返回该项目而不使用分隔符。</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// expected output: &quot;Fire,Air,Water&quot;
+
+console.log(elements.join(''));
+// expected output: &quot;FireAirWater&quot;
+
+console.log(elements.join('-'));
+// expected output: &quot;Fire-Air-Water&quot;	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol start="11"><li><strong>concat</strong>: 连接数组，不影响原数组， 浅拷贝</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	const array3 = array1.concat(array2);
+	var num1 = [[1]];
+	var num2 = [2, [3]];
+	var num3=[5,[6]];
+
+	var nums = num1.concat(num2);
+
+	console.log(nums);
+	// results is [[1], 2, [3]]
+
+	var nums2=num1.concat(4,num3);
+
+	console.log(nums2)
+	// results is [[1], 4, 5,[6]]
+
+	// modify the first element of num1
+	num1[0].push(4);
+
+	console.log(nums);
+// results is [[1, 4], 2, [3]]
+	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><ol start="12"><li><strong>slice(start, end)</strong>: 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的<strong>浅拷贝</strong>（包括 begin，不包括end）。原始数组不会被改变。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// expected output: Array [&quot;camel&quot;, &quot;duck&quot;, &quot;elephant&quot;]
+
+console.log(animals.slice(2, 4));
+// expected output: Array [&quot;camel&quot;, &quot;duck&quot;]
+
+console.log(animals.slice(1, 5));
+// expected output: Array [&quot;bison&quot;, &quot;camel&quot;, &quot;duck&quot;, &quot;elephant&quot;]
+	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ol start="13"><li><strong>数组拆解:flat</strong>: 方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	var arr1 = [1, 2, [3, 4]];
+arr1.flat(); 
+// [1, 2, 3, 4]
+
+var arr2 = [1, 2, [3, 4, [5, 6]]];
+arr2.flat();
+// [1, 2, 3, 4, [5, 6]]
+
+var arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2);
+// [1, 2, 3, 4, 5, 6]
+
+//使用 Infinity，可展开任意深度的嵌套数组
+var arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+arr4.flat(Infinity);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ol start="14"><li><p><strong>indexOf / lastIndexOf(value, fromIndex)</strong>: 查找数组项，返回对应的下标 未找到返回 -1
+fromIndex  开始查找的位置
+<strong>在比较第一个参数与数组的每一项时，采用的全等(===)</strong></p></li> <li><p><strong>reduce / reduceRight</strong></p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
+	reduce() 方法对数组中的每个元素执行一个由您提供的reducer函数(升序执行)，将其结果汇总为单个返回值。
+	
+	[详解](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="16"><li><strong>flatMap()</strong> 相当于flat(1) 但是效率更高</li></ol> <h2 id="会修改原来的数组"><a href="#会修改原来的数组" class="header-anchor">#</a> 会修改原来的数组：</h2> <ol><li><strong>forEach</strong>: 无法break，可以用try/catch中throw new Error来停止</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
+	arr.foreach( element =&gt; element * 2 );
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li><strong>push</strong> / <strong>pop</strong>: 末尾推入和弹出，改变原数组，</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	arr.push(element1, …, elementN) 返回新的arr.length
+
+	arr.pop() // 删除最后一个元素 返回改元素的值
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="3"><li><strong>unshift</strong> / <strong>shift</strong>: 头部推入和弹出，改变原数组，返回操作项</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	arr.shift() //删除 删除数组第一个元素，并且返回该元素的值
+	arr.unshift(element1, …, elementN) // 像数组的开头添加元素，返回新的arr.length
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ol start="4"><li><strong>sort(fn)</strong> / <strong>reverse</strong>: 排序与反转，改变原数组</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>*使用映射改善排序*
+
+// 需要被排序的数组
+var list = [‘Delta’, ‘alpha’, ‘CHARLIE’, ‘bravo’];
+
+// 对需要排序的数字和位置的临时存储
+var mapped = list.map(function(el, i) {
+  return { index: i, value: el.toLowerCase() };
+})
+
+// 按照多个值排序数组
+mapped.sort(function(a, b) {
+  return +(a.value &gt; b.value) || +(a.value === b.value) - 1;
+});
+
+// 根据索引得到排序的结果
+var result = mapped.map(function(el){
+  return list[el.index];
+});
+	
+//数组乱序：
+*var* arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+arr.sort(*function* () {
+    *return* Math.random() - 0.5;
+});
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><ol start="5"><li><strong>splice(start, number, value…)</strong>: 返回删除元素组成的数组，value 为插入项，改变原数组</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// inserts at index 1
+console.log(months);
+// expected output: Array [&quot;Jan&quot;, &quot;Feb&quot;, &quot;March&quot;, &quot;April&quot;, &quot;June&quot;]
+
+months.splice(4, 1, 'May');
+// replaces 1 element at index 4
+console.log(months);
+// expected output: Array [&quot;Jan&quot;, &quot;Feb&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;]
+	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">10/17/2020, 1:28:46 AM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.612206cd.js" defer></script><script src="/assets/js/3.24baaf55.js" defer></script><script src="/assets/js/1.e39e485a.js" defer></script><script src="/assets/js/27.f33edc21.js" defer></script>
+  </body>
+</html>
